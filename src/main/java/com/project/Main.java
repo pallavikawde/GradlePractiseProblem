@@ -25,6 +25,13 @@ public class Main {
             validName = RegexCheckingOperations.usernameValidationChecking(lastName);
         }
         while (validName == false);
-    }
 
+        //eMail input
+        do {
+            System.out.printf("Enter a E-Mail of User: ");
+            String email = sc.nextLine();
+            validName = RegexCheckingOperations.emailValidationChecking(email);
+        }
+        while (validName == false);
+    }
 }
