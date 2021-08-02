@@ -8,7 +8,7 @@ public class RegexCheckingOperations {
      * @return
      */
     public static boolean usernameValidationChecking(String name){
-        boolean validation = Pattern.matches("^[A-Z][a-z]{3,}",name);
+        boolean validation = Pattern.matches("^[A-Z][a-z]{2,}",name);
         if(validation){
             System.out.println(name+" is Valid name");
         }

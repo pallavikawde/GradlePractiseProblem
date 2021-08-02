@@ -18,6 +18,13 @@ public class Main {
         }
         while (validName == false);
 
+        //Last name input
+        do {
+            System.out.printf("Enter a Last Name of User: ");
+            String lastName = sc.nextLine();
+            validName = RegexCheckingOperations.usernameValidationChecking(lastName);
+        }
+        while (validName == false);
     }
 
 }
