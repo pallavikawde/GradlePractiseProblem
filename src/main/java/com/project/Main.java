@@ -1,5 +1,4 @@
 package com.project;
-
 import java.util.Scanner;
 
 /**
@@ -39,6 +38,14 @@ public class Main {
             System.out.printf("Enter a Mobile Number of User: ");
             String mNum = sc.nextLine();
             validName = RegexCheckingOperations.mNumValidationChecking(mNum);
+        }
+        while (validName == false);
+
+        //Password input
+        do {
+            System.out.printf("Enter a Password of User: ");
+            String password = sc.nextLine();
+            validName = RegexCheckingOperations.passwordValidationChecking(password);
         }
         while (validName == false);
     }
