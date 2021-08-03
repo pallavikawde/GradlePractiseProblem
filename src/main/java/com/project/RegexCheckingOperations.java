@@ -24,7 +24,7 @@ public class RegexCheckingOperations {
      * @return
      */
     public static boolean emailValidationChecking(String name){
-        boolean validation = Pattern.matches("^[A-Za-z0-9+_.-]+@bl[.]co[.]?[i]?[n]?",name);  //[[a-z]{3,}][.]?[[a-z]{3,}]?[@]
+        boolean validation = Pattern.matches("^[A-Za-z0-9+_.-]+@(.+)$",name);  //^[A-Za-z0-9+_.-]+@bl[.]co[.]?[i]?[n]?
         if(validation){
             System.out.println(name+" is Valid mail");
         }
@@ -56,7 +56,7 @@ public class RegexCheckingOperations {
      * @return
      */
     public static boolean passwordValidationChecking(String name){
-        boolean validation = Pattern.matches("(?=.*[a-z])(?=.*[A-Z]).{8,}",name);
+        boolean validation = Pattern.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[1-9]).{8,}",name);
         if(validation){
             System.out.println(name+" is Valid Password");
         }
