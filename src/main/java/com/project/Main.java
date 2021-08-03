@@ -5,8 +5,8 @@ import java.util.Scanner;
  *  Main Class
  */
 public class Main {
-    public static void main(String[] args){
-        Scanner sc = new  Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         boolean validName;
 
         //First name input
