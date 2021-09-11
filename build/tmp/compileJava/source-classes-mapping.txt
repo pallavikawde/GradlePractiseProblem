@@ -1,0 +1,8 @@
+com/project/RegexCheckingOperations.java
+ com.project.RegexCheckingOperations
+com/project/UserException.java
+ com.project.UserException
+com/project/Main.java
+ com.project.Main
+com/project/RegexChecker.java
+ com.project.RegexChecker
